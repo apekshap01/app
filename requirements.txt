@@ -1,4 +1,4 @@
-opencv-python-headless
-cmake==0.7.1
+numpy
 dlib
+opencv-python
 streamlit

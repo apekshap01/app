@@ -1,4 +1,4 @@
 numpy
-dlib
+dlib==19.22.0
 opencv-python
 streamlit

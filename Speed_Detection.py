@@ -3,11 +3,8 @@ import dlib
 import time
 from datetime import datetime
 import os
-import io
-from PIL import Image
-import streamlit as st
 import numpy as np
-import tempfile
+import streamlit as st
 
 # CLASSIFIER FOR DETECTING CARS--------------------------------------------------
 carCascade = cv2.CascadeClassifier('HaarCascadeClassifier.xml')
@@ -170,20 +167,4 @@ def app():
     uploaded_file = st.file_uploader("Choose a video file", type=["mp4"])
 
     if uploaded_file is not None:
-        try:
-            # OpenCV processing
-            video_frames = []
-            while True:
-                ret, frame = video.read()
-                if not ret:
-                    break
-                video_frames.append(frame)
-
-            trackMultipleObjects(video_frames)
-
-        except Exception as e:
-            st.error(f"An error occurred: {e}")
-
-
-if _name_ == '_main_':
-    app()
+       

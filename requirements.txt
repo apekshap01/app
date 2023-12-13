@@ -1,3 +1,4 @@
 opencv-python-headless
+cmake==0.7.1
 dlib
 streamlit
